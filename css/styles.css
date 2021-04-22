@@ -6,9 +6,10 @@
   --dark-accent-color: #000000;
   --white-accent-color: #ffffff;
 
-  --dark-bcg-cl: #2f303a;
+  --grey-bcg-cl: #c4c4c4;
   --button-bcg-cl: #f5f4fa;
   --team-bcg-cl: #f5f4fa;
+  --dark-bcg-cl: #2f303a;
 
   --border-main-cl: rgba(236, 236, 236, 1);
 }
@@ -101,7 +102,7 @@ img {
 
 .site-nav {
   margin-left: 93px;
-  margin-right: 331px;
+  margin-right: 305px;
 }
 
 .site-nav .link {
@@ -132,19 +133,79 @@ img {
 }
 
 .site-contacts .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
+}
+
+.icon-mail {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icon-mail::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  color: rgba(117, 117, 117, 1);
+
+  background-image: url("../images/icons/envelope\(hover\).svg");
+  background-size: contain;
+}
+
+.icon-phone {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icon-phone::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  color: rgba(117, 117, 117, 1);
+  background-image: url("../images/icons/smartphone.svg");
+  background-size: contain;
+}
+
+.icon-mail,
+.icon-phone:hover,
+.icon-mail,
+.icon-phone:focus {
+  color: rgba(33, 150, 243, 1);
 }
 
 /* Hero */
 
-.hero {
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--dark-bcg-cl);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/heroj.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  background-color: var(--grey-bcg-cl);
 
   letter-spacing: 0.06em;
   text-align: center;
 }
+
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -185,6 +246,34 @@ img {
 .features-item {
   margin-right: 30px;
 }
+
+.features-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  color: rgba(245, 244, 250, 1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url("../images/icons/antenna1.svg");
+}
+
+.icon-clock::before {
+  background-image: url("../images/icons/clock1.svg");
+}
+
+.icon-diagram::before {
+  background-image: url("../images/icons/diagram1.svg");
+}
+.icon-astronaut::before {
+  background-image: url("../images/icons/astronaut.svg");
+}
+
 .features-item:last-child {
   margin-right: 0px;
 }
@@ -314,6 +403,12 @@ button {
 
 .pointer {
   cursor: pointer;
+}
+
+/*Clients*/
+
+.clients {
+  text-align: center;
 }
 
 /* Footer */

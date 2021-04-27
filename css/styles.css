@@ -372,11 +372,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
-  margin-right: 32px;
-  margin-bottom: 30px;
-  margin-left: 32px;
   padding: 0;
+  margin-bottom: 30px;
+  margin-right: 32px;
+  margin-left: 32px;
 }
 
 .socials-icons-item {
@@ -393,12 +392,11 @@ img {
 
   width: 44px;
   height: 44px;
-  border-radius: 50%;
 }
 
 .socials-icons-link:hover,
 .socials-icons-link:focus {
-  fill: var(--white-accent-color);
+  border-radius: 50%;
   background-color: var(--accent-color);
 }
 
@@ -408,8 +406,8 @@ img {
   fill: rgba(175, 177, 184, 1);
 }
 
-.socials-icons-svg:hover,
-.socials-icons-svg:focus {
+.socials-icons-link:hover .socials-icons-svg,
+.socials-icons-link:focus .socials-icons-svg {
   fill: var(--white-accent-color);
   background-color: var(--accent-color);
 }
@@ -453,11 +451,14 @@ button {
 
 .clients {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .clients-list {
   display: flex;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .clients-company {
@@ -532,6 +533,7 @@ footer {
 
 .footer-radius {
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 .footer-socials-top {

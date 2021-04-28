@@ -455,7 +455,9 @@ button {
 /*Clients*/
 
 .clients {
+  display: flex;
   text-align: center;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -488,7 +490,7 @@ button {
 
 .company-img:hover,
 .company-img:focus {
-  fill: rgba(33, 150, 243, 1);
+  color: rgba(33, 150, 243, 1);
   border: 1px solid rgba(33, 150, 243, 1);
 }
 
@@ -496,14 +498,9 @@ button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
-  margin-right: 32px;
   width: 106px;
   height: 60px;
-
-  margin-bottom: 16px;
-  margin-left: 32px;
-  fill: rgba(175, 177, 184, 1);
+  fill: currentColor;
 }
 
 .clients-svg:hover,
